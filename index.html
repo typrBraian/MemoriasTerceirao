@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/img/LOGO303T.png">
+  
+</head>
+<body>
+  <header>
+    <img src="/img/logoterceirao3.png" alt="memorias" class="logo">
+  </header>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="home.html" method="get">
+      <label for="text">Turma</label>
+      <input type="text" id="turma" name="turma" required placeholder="Digite sua turma">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required placeholder="Digite seu email">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+        <div class="btn-group">
+            <input type="submit" value="Entrar" class="btn">
+        </div>
+    </form>
+    <form action="cadastro.html">
+      <div class="btn-group">
+        <input type="submit" value="Registrar" class="btn">
+    </div>
+    </form>
+</div>
+  <script>
+    // Adiciona um evento de clique ao botão de login
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      // Redireciona para a página home.html
+      window.location.href = 'home.html';
+    });
+
+    // Adiciona um evento de clique ao botão de registro
+    document.getElementById('registerBtn').addEventListener('click', function() {
+      // Redireciona para a página home.html
+      window.location.href = 'cadastro.html';
+    });
+  </script>
+</body>
+</html>
